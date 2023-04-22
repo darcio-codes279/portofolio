@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
 }
 
-
-
-h1, h2, h3{
-    font-family: 'Syne', sans-serif;
+body{
+  display: flex;
+  flex-direction: column;
 }
 
 .logo{
@@ -16,6 +16,75 @@ height: 76px;
 display: flex;
 right: 0%;
 justify-content: start;
+box-shadow: #34160C;
+}
+
+.hero{
+  height: 500px;
+  width: auto;
+  border-radius: 150px;
+  box-shadow: black 0 4px 8px;
+  border: #CEA76F;
+  display: flex;
+  column-gap: 800%;
+}
+
+.home-page{
+  margin-top: 8%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-message{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 50px;
+  text-shadow: 1px 3px 4px #422e20;
+}
+
+h1 {
+font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+  }
+
+h1 {
+  color: #CEA76F;
+  display: flex;
+  z-index: 1;
+  }
+
+h2 {
+  color: white;
+  text-shadow: #34160C 50px;
+}
+
+.Hello-message{
+  /* font-size: 40px; */
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+
+.button{
+background-color: #CEA76F;
+color: white;
+display: flex;
+border-radius: 5px;
+width: 50%;
+padding: 15px 20px;
+justify-content: center;
+text-decoration: none;
+font-family: 'Syne', sans-serif;
+font-size: 18px;
+box-shadow: #422e20 0px 4px 10px;
 }
 
 /* burger menu start */
@@ -121,7 +190,6 @@ button {
     position: relative;
     color: #f9f9f9;
     font-size: 32px;
-    font-family: "Euclid Circular A";
     padding: 20px 0;
     width: 300px;
     text-decoration: none;
@@ -162,30 +230,3 @@ button {
   
   /* burger menu end */
 
-  .hero{
-    height: 600px;
-    width: auto;
-    border-radius: 10px;
-    right: 0;
-    box-shadow: black 0 4px 8px;
-    position: absolute;
-    top: 15%;
-    right: 20%;
-  }
-
-  section{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  h1 {
-    color: #CEA76F;
-    display: flex;
-    z-index: 1;
-    }
-
-  footer{
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-  }
