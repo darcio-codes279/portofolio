@@ -13,7 +13,8 @@ rel="stylesheet">
     <script src="app.js"></script>
 </head>
 <body>
-  <section class="home">
+  <div class="background">
+  </div>
   <header>
     <img class="logo"src="./images/logo.png" alt="logo">
     <button class="navbar-burger" onclick="toggleMenu()"></button>
@@ -27,31 +28,45 @@ rel="stylesheet">
     </div>
     </nav>
   </header>
-  <div class="background">
-</div>
+
   <section class="home-page">
     <div class="home-message">
-      <h2>
-        Hello👋
-        <br>
-        <br>
-        My name is
-      </h2>
+      <p>
+        Hello👋, my name is
+      </p>
       <h1>
         DARCIO MASSALA
       </h1>
-      <h2>I AM A</h2>
+       <h2 class="i-am">I AM A</h2>
       <h1>SOFTWARE ENGINEER</h1>
       <button class="button">Let's work together!</button>
     </div>
     <aside>
-      <img class= "hero" src="./images/IMG_1424 copy.jpg" alt="hero>">
+      <img class= "hero" src="./images/IMG_1424_copy-removebg-preview.png" alt="hero>">
     </aside>
   </section>
       </div>
-    </section>
 <section class="about-me">
   <h2>
+    About Me
+  </h2>
+  <h5>
+    Economist turned Technologist
+  </h5>
+  <p>
+    Having graduated in Economics, I decided to start my career in Technology in June 2022, and I've been loving it ever since!
+    By day, I am a Cloud engineer. By night, I am a Web Designer and Developer, as I enjoy creating immersive visual experiences online.
+    I am tenacious, perspicacious and constantly looking for ways to ease people's pain points, using Technology.
+  </p>
+</section>
+
+<section class="services">
+
+  <h2>
+    Services
+  </h2>
+
+  <h3>
     Front End Engineer
     <br>
     Cloud Engineer
@@ -59,14 +74,27 @@ rel="stylesheet">
     Tech Enthusiast
     <br>
     Speaker
-  </h2>
+  </h3>
 </section>
+
 <section class="portfolio">
 </section>
+
 <section class="contact-me">
+  <h2 class="feel-free"> FEEL FREE TO CONTACT ME!</h2>
+
+<form action="contactform.php" method="get">
+  <input class="name-form" type="text" name="Full name" placeholder="Full name">
+  <input class="email-form" type="text" name="E-mail" placeholder="E-mail">
+  <textarea class="message" name= "message" placeholder= "Write a message"></textarea>
+  <input type="submit" name="submit">
+</form>
+    
+  </div>
 </section>
+
   <footer>
-    <p>Footer</p>
+    <!-- Footer -->
   </footer>
 </body>
 </html>
