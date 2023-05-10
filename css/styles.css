@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Syne', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body{
@@ -16,15 +16,15 @@ height: 50px;
 }
 
 .hero{
-  height: 400px;
+  height: 500px;
   width: auto;
   }
 
-  aside{
-    position: absolute;
-    top: 235px;
-    right: 68px;
-  }
+  .hero{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .home-page{
   margin-top: 8%;
@@ -38,15 +38,14 @@ height: 50px;
   text-align: center;
 }
 
-.i-am{
-  margin-bottom: 70%;
-}
 h1 {
 font-size: 40px;
 color: #CEA76F;
 display: flex;
 z-index: 1;
-text-shadow: 2px 2px #34160C
+text-shadow: 2px 2px #34160C;
+text-align: center;
+justify-content: center;
 }
 
 h2 {
@@ -64,18 +63,26 @@ footer{
   right: 80%;
 }
 
-.button{
+.home-button{
 background-color: #CEA76F;
 color: white;
 border-radius: 5px;
-width: 50%;
-padding: 15px 20px;
-right: 50%;
+padding: 15px;
 font-family: 'Syne', sans-serif;
 font-size: 18px;
 box-shadow: #422e20 0px 4px 10px;
-margin: 10px 100px
+display: flex;
+justify-content: center;
 }
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+}
+
 
 /* burger menu start */
 button {
@@ -217,11 +224,10 @@ button {
       opacity: 1;
     }
   }
-  
 
   /* About me section */
   .about-me{
-    margin-top: 120%;
+    margin-top: 200px;
   }
 
 /* Form */
