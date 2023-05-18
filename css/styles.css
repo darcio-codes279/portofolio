@@ -230,6 +230,37 @@ button {
     margin-top: 200px;
   }
 
+.container{
+  position: relative;
+  left: 10px;
+  width: 100%;
+  margin: 30px;
+}
+
+.left{
+  display: inline-block;
+  float: left;
+  width: 200px;
+}
+
+.right{
+  display: inline-block;
+  float: left;
+  height: 450px;
+}
+
+
+.front-end-button, .cloud-eng-button, .tech-enth-button, .speaker-button{
+background-color: transparent;
+color: white;
+padding: 30px 30px;
+font-family: 'Syne', sans-serif;
+font-size: 22px;
+/* display: flex;
+justify-content: center; */
+}
+
+
 /* Form */
 
 
