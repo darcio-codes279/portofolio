@@ -261,6 +261,37 @@ justify-content: center; */
 }
 
 
+/* Portfolio */
+
+.portfolio{
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.wrapper{
+  max-width: 3000px;
+}
+
+.wrapper .carousel {
+white-space: nowrap;
+cursor: pointer;
+overflow: hidden;
+font-size: 0;
+}
+
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  width: calc(100%/2);
+}
+
+.carousel img:first-child{
+  margin-left: 50px;
+}
+
 /* Form */
 
 
