@@ -265,7 +265,7 @@ justify-content: center; */
 
 .portfolio{
   display: flex;
-  padding: 0 10px;
+  padding: 0 50px;
   align-items: center;
   justify-content: center;
   min-height: 30vh;
@@ -273,6 +273,7 @@ justify-content: center; */
 
 .wrapper{
   max-width: 3000px;
+  position: relative;
 }
 
 .wrapper .carousel {
@@ -280,19 +281,57 @@ white-space: nowrap;
 cursor: pointer;
 overflow: hidden;
 font-size: 0;
+margin-left: -100px;
+}
+
+.wrapper i{
+  cursor: pointer;
+  background-color: #34160C;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+  left: -10px;
+}
+
+.wrapper i:last-child{
+  right: -10px;
 }
 
 .carousel img{
   height: 340px;
   object-fit: cover;
-  width: calc(100%/2);
+  width: calc(100%/3);
 }
 
-.carousel img:first-child{
-  margin-left: 50px;
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100%/2);
+  }
 }
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+
+/* .carousel img:first-child{
+  margin-left: 50px;
+} */
 
 /* Form */
+
 
 
 .feel-free{

@@ -29,3 +29,10 @@ function showFunction4() {
 	document.querySelector(".cloud-eng-message").style.display = "none";
 	document.querySelector(".tech-enth-message").style.display = "none";
 }
+
+const carousel = document.querySelector(".carousel");
+const dragging = (e) => {
+	carousel.scrollLeft = e.pageX;
+};
+
+carousel.addEventListener("mousemove", dragging);
