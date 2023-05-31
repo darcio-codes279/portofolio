@@ -33,19 +33,24 @@ rel="stylesheet">
   <section class="home-page">
 
     <div class="home-message">
-      <p>
+      <p class="hello ">
         Hello👋, my name is
       </p>
       <h1>
         DARCIO MASSALA
       </h1>
        <h2 class="i-am">I AM A</h2>
-       <img class= "hero" src="./images/IMG_1424_copy-removebg-preview.png" alt="hero>">
+       <img class= "hero" src="./images/imgHero.png" alt="hero">
       <h1>SOFTWARE ENGINEER</h1>
       <div class="btn">
         <button class="home-button">Let's work together!</button>
       </div>
-
+      <div class="social-media">
+      <i class="fa-brands fa-instagram" href="#"></i>
+      <i class="fa-brands fa-twitter" href="#"></i>
+      <i class="fa-brands fa-github" href="#"></i>
+      <i class="fa-brands fa-linkedin" href="#"></i>
+      </div>
     </div>
 
   </section>
@@ -67,27 +72,56 @@ rel="stylesheet">
 
 
   <div class="left">
-    <button class="front-end-button" id="frontEndBtn">Front End Engineer</button>
+    <button class="front-end-button" onclick="showFunction1()" id="frontEndBtn">Front End Engineer</button>
 
-    <button class="cloud-eng-button" id="cloudEngBtn">Cloud End Engineer</button>
+    <button class="cloud-eng-button" onclick="showFunction2()"id="cloudEngBtn">Cloud End Engineer</button>
 
-    <button class="tech-enth-button" id="techEnthBtn">Writer and Speaker</button>
+    <button class="tech-enth-button" onclick="showFunction3()" id="techEnthBtn">Writer and Speaker</button>
 
   </div>
+
+  <div class="vl"></div>
   
   <div class="right">
 
+    <!-- <div> <i class="fa-sharp fa-solid fa-chevron-right"></i> </div> -->
   <div class="item-message">
-    <p class="front-end-message" style="display: none;"> I am a front end engineer. These are my skills</p>
+    <p class="front-end-message" style="display: none;"> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis turpis eu ex pretium, non rutrum turpis pretium. 
+      Ut mattis at mauris vel consequat. Curabitur tincidunt magna vitae pellentesque ultricies. Maecenas sodales quis urna eget imperdiet. 
+      Nulla neque ligula, cursus vitae dolor vitae, tincidunt vulputate sem. Praesent iaculis nulla quis mauris pretium, vitae commodo nisi rutrum. 
+      Phasellus fermentum neque magna, eu pellentesque justo placerat a. 
+      Vestibulum fringilla, risus et aliquam pharetra, dolor orci facilisis lectus, vel scelerisque justo libero nec augue. Etiam at euismod quam. 
+      In hac habitasse platea dictumst. Maecenas faucibus nulla ac arcu efficitur, et ultrices arcu viverra. 
+      Nullam arcu ante, consectetur vel condimentum id, pharetra non velit. In malesuada mauris quis arcu congue, id tempor ex consequat.
+    </p>
   </div>
 
+    <!-- <div> <i class="fa-sharp fa-solid fa-chevron-right"></i> </div> -->
   <div class="item-message">
-    <p class="cloud-eng-message" style="display: none;"> I am a Cloud End Engineer. These are my skills</p>
+    <p class="cloud-eng-message" style="display: none;"> I am a Cloud End Engineer. These are my skills
+   
+      In hac habitasse platea dictumst. Vestibulum gravida dolor vel magna tempus malesuada. 
+      Donec eu tortor pulvinar, ultrices felis ac, consequat ipsum. Etiam consequat lorem sit amet dolor interdum vehicula. 
+      Nulla volutpat, tellus volutpat auctor suscipit, nunc metus pulvinar ex, sed rhoncus nulla nulla eu metus. 
+      Integer molestie dictum mauris bibendum fermentum. Fusce quis nulla semper, facilisis nunc nec, congue est. 
+      Aenean id ipsum aliquam, fermentum nunc vel, sagittis ante. Donec mattis nulla sit amet justo rutrum facilisis. Duis a finibus lorem. 
+      Proin dapibus ante ut ante tempor, et placerat elit dignissim. Donec et risus laoreet, dapibus massa eu, facilisis neque.      
+
+    </p>
   </div>
   
-
+    <!-- <div> <i class="fa-sharp fa-solid fa-chevron-right"></i> </div> -->
   <div class="item-message">
-    <p class="tech-enth-message" style="display: none;"> I am a Writer and Speaker. These are my skills</p>
+    <p class="tech-enth-message" style="display: none;"> 
+    
+      Mauris in nunc augue. Phasellus porta dapibus neque, quis ultricies ipsum pellentesque ac. Cras eleifend justo in euismod efficitur. 
+      Nam convallis elementum urna non congue. Mauris lobortis lacinia pharetra. Nunc augue purus, convallis non convallis vitae, vehicula vitae risus. 
+      Vestibulum vitae sodales mi. Donec eu rutrum elit, finibus ultricies libero. Phasellus viverra, urna in rhoncus egestas, sem nisi congue ante, sit amet consequat velit sapien non odio. 
+      Vivamus convallis orci et ante egestas pharetra. Suspendisse posuere odio non nisl ornare, a aliquet orci auctor. 
+      Pellentesque tincidunt arcu justo, ut convallis magna viverra in. Nam cursus elit sed nisi auctor, non accumsan massa fermentum. 
+      Cras imperdiet tellus nisl, sed ornare nisi semper nec. In hac habitasse platea dictumst.
+    </p>
   </div>
   
 </div>
@@ -104,18 +138,28 @@ rel="stylesheet">
   </h3>
 
 <div class="portfolio">
-  <div class="wrapper">
     <div class="carousel">
+      <div class="carousel-item1">
       <img src="./images/img1.jpg" alt="image" class="carousel-img">
+      </div>
+      <div class="carousel-item2">
       <img src="./images/img2.jpg" alt="image" class="carousel-img">
+    </div>
+      <div class="carousel-item3">
       <img src="./images/img3.jpg" alt="image" class="carousel-img">
+    </div>
+      <div class="carousel-item4">
       <img src="./images/img4.jpg" alt="image" class="carousel-img">
+    </div>
+      <div class="carousel-item5">
       <img src="./images/img5.jpg" alt="image" class="carousel-img">
+    </div>
+      <div class="carousel-item6">
       <img src="./images/img6.jpg" alt="image" class="carousel-img">
+    </div>
 
     </div>
   </div>
-</div>
 </section>
 
 <section class="contact-me">
@@ -125,7 +169,7 @@ rel="stylesheet">
   <input class="name-form" type="text" name="Full name" placeholder="Full name">
   <input class="email-form" type="text" name="E-mail" placeholder="E-mail">
   <textarea class="message" name= "message" placeholder= "Write a message"></textarea>
-  <input type="submit" name="submit">
+  <input type="submit" name="submit" class="submit-btn">
 </form>
     
   </div>

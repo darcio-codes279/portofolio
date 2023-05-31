@@ -2,103 +2,55 @@ const toggleMenu = () => {
 	document.body.classList.toggle("open");
 };
 
-// function showFunction1() {
-// 	document.querySelector(".front-end-message").style.display = "block";
-// 	document.querySelector(".cloud-eng-message").style.display = "none";
-// 	document.querySelector(".tech-enth-message").style.display = "none";
+function showFunction1() {
+	document.querySelector(".front-end-message").style.display = "block";
+	document.querySelector(".cloud-eng-message").style.display = "none";
+	document.querySelector(".tech-enth-message").style.display = "none";
 
-// 	document.querySelector("#item1").style.color = "#CEA76F";
-// 	document.querySelector("#item2").style.color = "white";
-// 	document.querySelector("#item3").style.color = "white";
+	document.querySelector("#frontEndBtn").style.color = "#CEA76F";
+	document.querySelector("#cloudEngBtn").style.color = "white";
+	document.querySelector("#techEnthBtn").style.color = "white";
 
-// 	document.querySelector("#item1").style.fontSize = "30px";
-// 	document.querySelector("#item2").style.fontSize = "22px";
-// 	document.querySelector("#item3").style.fontSize = "22px";
-// }
-
-// function showFunction2() {
-// 	document.querySelector(".cloud-eng-message").style.display = "block";
-// 	document.querySelector(".front-end-message").style.display = "none";
-// 	document.querySelector(".tech-enth-message").style.display = "none";
-
-// 	document.querySelector("#item1").style.color = "white";
-// 	document.querySelector("#item2").style.color = "#CEA76F";
-// 	document.querySelector("#item3").style.color = "white";
-
-// 	document.querySelector("#item1").style.fontSize = "22px";
-// 	document.querySelector("#item2").style.fontSize = "30px";
-// 	document.querySelector("#item3").style.fontSize = "22px";
-// }
-
-// function showFunction3() {
-// 	document.querySelector(".tech-enth-message").style.display = "block";
-// 	document.querySelector(".front-end-message").style.display = "none";
-// 	document.querySelector(".cloud-eng-message").style.display = "none";
-
-// 	document.querySelector("#item1").style.color = "white";
-// 	document.querySelector("#item2").style.color = "white";
-// 	document.querySelector("#item3").style.color = "#CEA76F";
-
-// 	document.querySelector("#item1").style.fontSize = "22px";
-// 	document.querySelector("#item2").style.fontSize = "22px";
-// 	document.querySelector("#item3").style.fontSize = "30px";
-// }
-
-const frontEndMessage = document.querySelector(".front-end-message");
-const cloudEngMessage = document.querySelector(".cloud-eng-message");
-const techEnthMessage = document.querySelector(".tech-enth-message");
-
-const frontEndBtn = document.querySelector("#frontEndBtn");
-const cloudEngBtn = document.querySelector("#cloudEngBtn");
-const techEnthBtn = document.querySelector("#techEnthBtn");
-
-frontEndBtn;
-cloudEngBtn;
-techEnthBtn;
-
-function showFunction(elementToShow, elementToHide1, elementToHide2) {
-	elementToShow.style.display = "block";
-	elementToHide1.style.display = "none";
-	elementToHide2.style.display = "none";
+	document.querySelector("#frontEndBtn").style.fontSize = "50px";
+	document.querySelector("#cloudEngBtn").style.fontSize = "40px";
+	document.querySelector("#techEnthBtn").style.fontSize = "40px";
 }
 
-function styleFunction(
-	item1,
-	item2,
-	item3,
-	fontSizeUp,
-	fontSizeDown1,
-	fontSizeDown2
-) {
-	item1.style.color = "#CEA76F";
-	item2.style.color = "white";
-	item3.style.color = "white";
-	fontSizeUp.style.fontSize = "30px";
-	fontSizeDown1.style.fontSize = "22px";
-	fontSizeDown2.style.fontSize = "22px";
+function showFunction2() {
+	document.querySelector(".cloud-eng-message").style.display = "block";
+	document.querySelector(".front-end-message").style.display = "none";
+	document.querySelector(".tech-enth-message").style.display = "none";
+
+	document.querySelector("#frontEndBtn").style.color = "white";
+	document.querySelector("#cloudEngBtn").style.color = "#CEA76F";
+	document.querySelector("#techEnthBtn").style.color = "white";
+
+	document.querySelector("#frontEndBtn").style.fontSize = "40px";
+	document.querySelector("#cloudEngBtn").style.fontSize = "50px";
+	document.querySelector("#techEnthBtn").style.fontSize = "40px";
 }
 
-function showFrontEndbtn() {
-	showFunction(frontEndMessage, cloudEngMessage, techEnthMessage);
-	styleFunction(frontEndBtn, cloudEngBtn, techEnthBtn, "30px", "22px", "22px");
-	console.log("1 clicked");
+function showFunction3() {
+	document.querySelector(".tech-enth-message").style.display = "block";
+	document.querySelector(".front-end-message").style.display = "none";
+	document.querySelector(".cloud-eng-message").style.display = "none";
+
+	document.querySelector("#frontEndBtn").style.color = "white";
+	document.querySelector("#cloudEngBtn").style.color = "white";
+	document.querySelector("#techEnthBtn").style.color = "#CEA76F";
+
+	document.querySelector("#frontEndBtn").style.fontSize = "40px";
+	document.querySelector("#cloudEngBtn").style.fontSize = "40px";
+	document.querySelector("#techEnthBtn").style.fontSize = "50px";
 }
 
-function showCloudEngbtn() {
-	showFunction(cloudEngMessage, frontEndMessage, techEnthMessage);
-	styleFunction(cloudEngBtn, frontEndBtn, techEnthBtn, "22px", "30px", "22px");
-	console.log("2 clicked");
-}
+// const frontEndBtn = document.querySelector("#frontEndBtn");
+// const cloudEngBtn = document.querySelector("#cloudEngBtn");
+// const techEnthBtn = document.querySelector("#techEnthBtn");
 
-function showTechEnthbtn() {
-	showFunction(techEnthMessage, frontEndMessage, cloudEngMessage);
-	styleFunction(techEnthBtn, frontEndBtn, cloudEngBtn, "22px", "22px", "30px");
-	console.log("3 clicked");
-}
-
-frontEndBtn.addEventListener("click", showFrontEndbtn);
-cloudEngBtn.addEventListener("click", showCloudEngbtn);
-techEnthBtn.addEventListener("click", showTechEnthbtn);
+// frontEndBtn.addEventListener("click", () => showFunction1());
+// cloudEngBtn.addEventListener("click", showFunction2);
+// techEnthBtn.addEventListener("click", showFunction3);
 
 const slider = document.querySelector(".carousel");
 let isDown = false;
