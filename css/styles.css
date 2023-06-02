@@ -315,6 +315,7 @@ font-size: 40px;
 	height: 600px;
 	scroll-snap-type: x mandatory;
 	scroll-padding: 1rem;
+  /* overflow-x: hidden !important; */
 }
 
 .active {
