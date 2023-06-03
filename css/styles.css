@@ -312,7 +312,6 @@ font-size: 40px;
 	grid-column-gap: 30rem;
 	grid-row-gap: 1px;
   overflow-x: scroll;
-	height: 600px;
 	scroll-snap-type: x mandatory;
 	scroll-padding: 1rem;
   /* overflow-x: hidden !important; */
@@ -322,13 +321,13 @@ font-size: 40px;
 	scroll-snap-type: unset;
 }
 
-.carousel img {
+.carousel-img {
 	scroll-snap-align: center;
 	display: inline-block;
 	border-radius: 50px;
   width: 600px;
   height: 500px;
-  object-fit: cover;
+  background-size: cover;
 }
 
 /* Form */
