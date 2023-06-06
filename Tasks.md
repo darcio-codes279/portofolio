@@ -11,6 +11,7 @@
 [] make sure Mobile layout is fine
 [] Add animations
 [] Fix positioning
+[] Componentising
 
 ## Hero section
 
