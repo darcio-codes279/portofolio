@@ -9,6 +9,7 @@ body{
   flex-direction: column;
   overflow-x: hidden !important;
   overflow: overlay;
+  background-color: #B27952;
 }
 
 ::-webkit-scrollbar {
@@ -46,29 +47,36 @@ height: 50px;
   margin-left: 0%;
 }
 
-.home-message{
-  display: flex;
-  flex-direction: column;
-  justify-content: center, space-evenly;
-  text-align: center;
+.home-text{
+  display: absolute;
+  margin-left: 15px;
+  
 }
 
 h1 {
-font-size: 80px;
-color: #CEA76F;
-display: flex;
+font-size: 32px;
+color: white;
 z-index: 1;
-text-shadow: 2px 2px #34160C;
-text-align: center;
-justify-content: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-align: left;
+line-height: 58px;
 }
 
 h2 {
   color: white;
-  text-shadow: #34160C 50px;
-  font-size: 70px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  text-align: left;
+  line-height: 58px;
 }
 
+h3{
+  font-size: 18.72px;
+}
+
+h4{
+  font-size: 16px;
+}
 p {
   font-size: 24px;
 }
@@ -103,9 +111,9 @@ margin-top: 50px;
 
 .social-media i {
 color: white;
-font-size: 55px;
-text-shadow: #34160C 50px;
-margin: 50px;
+font-size: 24px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin: 40px;
 }
 
 @media screen and (min-width: 992px) {
@@ -123,25 +131,33 @@ button {
   
   .navbar,
   .navbar-burger,
-  .menu,
-  .background {
+  .menu{
     position: fixed;
   }
   
-  .background {
+  /* .background {
     z-index: -1;
     position: fixed; 
-    top: 0px; 
-    left: 0px; 
     width: 100%; 
-    height: 100%;
-    background: linear-gradient(180deg, #B27952 0%, #9F6A48 9.38%, #946141 13.02%, #8B5B3C 16.67%, #7D4F35 25.52%, #6A402A 37.5%, #613925 45.83%, #593321 51.56%, #532F1D 63.54%, #4C2919 78.12%, #34160C 100%);
+    height: 50%;
+    background: linear-gradient(180deg, #B27952 0%, #9F6A48 9.38%, 
+    #946141 13.02%, #8B5B3C 16.67%, #7D4F35 25.52%, 
+    #6A402A 37.5%, #613925 45.83%, #593321 51.56%, 
+    #532F1D 63.54%, #4C2919 78.12%, #34160C 100%);
     background-blend-mode: difference;
     background-repeat: no-repeat;
     background-position: 100%;
-    transition: 0.5s;
-  }
+  } */
   
+header{
+    top: 0vh;
+    height: 100%;
+    width: 100%;
+    background-color: #946141;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
   body.open .background {
     filter: blur(50px);
   }

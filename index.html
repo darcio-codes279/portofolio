@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darcio Massala</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap" 
-rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="components/about-me.js"></script>
     <script src="components/burgerMenu.js"></script>
-  <script src="components/carousel.js"></script>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
-  <div class="background">
-  </div>
+  <!-- <div class="background"></div> -->
   <header>
     <img class="logo"src="./images/logo.png" alt="logo">
     <button class="navbar-burger" onclick="toggleMenu()"></button>
@@ -30,32 +34,37 @@ rel="stylesheet">
       </nav>
     </div>
     </nav>
-  </header>
-  <section class="home-page">
 
-    <div class="home-message">
-      <p class="hello ">
+    <div class="home-text">
+
+      <!-- <p class="hello ">
         Hello👋, my name is
       </p>
       <h1>
         DARCIO MASSALA
+      </h1> -->
+      <h1> DARCIO
+        MASSALA✌🏿
       </h1>
-       <h2 class="i-am">I AM A</h2>
+       <h1> CREATIVE DEVELOPER🚀</h2>
+       <h2> Currently DevOps Engineer at Accenture👨🏿‍💻</h2>
+       <h3> Based in UK</h2>
+       <h3> Manchester🇬🇧</h2>
+      </div>      
+      <div class="social-media">
+        <i class="fa-brands fa-instagram" href="#"></i>
+        <i class="fa-brands fa-twitter" href="#"></i>
+        <i class="fa-brands fa-github" href="#"></i>
+        <i class="fa-brands fa-linkedin" href="#"></i>
+      </div>
        <img class= "hero" src="./images/imgHero.png" alt="hero">
-      <h1>SOFTWARE ENGINEER</h1>
+      <!-- <h1>SOFTWARE ENGINEER</h1> -->
       <div class="btn">
         <button class="home-button">Let's work together!</button>
       </div>
-      <div class="social-media">
-      <i class="fa-brands fa-instagram" href="#"></i>
-      <i class="fa-brands fa-twitter" href="#"></i>
-      <i class="fa-brands fa-github" href="#"></i>
-      <i class="fa-brands fa-linkedin" href="#"></i>
-      </div>
-    </div>
 
-  </section>
       </div>
+  </header>
 <section class="about-me">
   <h2>
     About Me
@@ -131,11 +140,47 @@ rel="stylesheet">
 
 <section class="portfolio-section">
 
+
   <h2>
     Portfolio
   </h2>
 <div class="portfolio">
+
+
+  <link rel="stylesheet" href=css/carousel.css>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="images/img1.jpg" alt="image">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/img2.jpg" alt="image">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/img3.jpg" alt="image">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/img4.jpg" alt="image">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/img5.jpg" alt="image">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/img6.jpg" alt="image">
+    </div>
   </div>
+  <!-- If we need pagination -->
+  <div class="swiper-scrollbar"></div>
+
+  <!-- If we need scrollbar -->
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="components/carousel.js"></script>
 
 </section>
 

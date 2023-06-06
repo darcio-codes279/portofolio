@@ -24,7 +24,7 @@
 
 ## Portfolio
 
-[] fix carousel (Swiper)
+[x] fix carousel (Swiper)
 [] When I hover over the img, I should get some information
 
 - Or add buttons
