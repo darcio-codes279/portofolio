@@ -17,6 +17,7 @@
 
 [] Add links to social media buttons
 [] Add link to home button
+[x] Create text carousel
 
 ## About me
 

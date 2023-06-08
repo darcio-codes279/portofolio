@@ -1,12 +1,11 @@
-.swiper {
-    width: 1000px;
-    height: 600px;
+.swiper-container-2 {
+    width: 380px;
+    height: 250px;
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,3 +21,4 @@
   .swipper-pagination-active {
     background-color: #000 !important;
   }
+
