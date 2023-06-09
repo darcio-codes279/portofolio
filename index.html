@@ -21,7 +21,7 @@
 </head>
 <body>
   <!-- <div class="background"></div> -->
-  <header>
+  <div class="header">
     <img class="logo"src="./images/logo.png" alt="logo">
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <div class="menu">
@@ -32,22 +32,23 @@
         <a href="#" style="animation-delay: 0.5s">Contact Me</a>
       </nav>
     </div>
-    </nav>
+  </div>
+
+  <script src="components/navbarHideOnScroll.js"></script>
 
     <div class="home-text">
-
       <br>
       <br>
 
       <br>
-      <h1>DARCIO</h1>
-      <h1>MASSALA</h1>            
+      <h1 style="margin-left: 30px">DARCIO</h1>
+      <h1 style="margin-left: 30px">MASSALA</h1>            
 
-      <img class= "hero" src="./images/imgHero4.jpeg" alt="hero">
-      <h1> CREATIVE </h1>
-      <h1>DEVELOPER</h1>  
+      <img style="margin-left: 30px" class= "hero" src="./images/imgHero4.jpeg" alt="hero">
+      <h1 style="margin-left: 30px"> CREATIVE </h1>
+      <h1 style="margin-left: 30px">DEVELOPER</h1>  
        <br>
-<div class="box">
+<div style="margin-left: 30px" class="box">
        <div class="left-box"><h3>I</h3></div>
       <link rel="stylesheet" href=css/text-slider.css>
       <div class="swiper-container-1 swiper"  id="middle-box">
@@ -71,7 +72,8 @@
       </div>
       <i class="fa-sharp fa-solid fa-angles-down fa-fade"></i>
     </div>
-  </header>
+  </div>
+</div>
 <section class="about-me">
   <h2>
     About Me
@@ -148,11 +150,12 @@
 <section class="portfolio-section">
 
 
-  <h2>
-    Portfolio
-  </h2>
+
 <div class="portfolio">
 
+  <h2 style="margin-top: 50px;">
+    Portfolio
+  </h2>
 
   <link rel="stylesheet" href=css/carousel.css>
 <!-- Slider main container -->
@@ -193,14 +196,34 @@
 <section class="contact-me">
   <h2 class="feel-free"> FEEL FREE TO CONTACT ME!</h2>
 
-<form action="contactform.php" method="get">
-  <input class="name-form" type="text" name="Full name" placeholder="Full name">
-  <input class="email-form" type="text" name="E-mail" placeholder="E-mail">
-  <textarea class="message" name= "message" placeholder= "Write a message"></textarea>
-  <input type="submit" name="submit" class="submit-btn">
-</form>
-    
+<!-- <form action="contactform.php" method="get">
+  <div class="contact-form">
+  <div class="name-form">
+    <input  type="text" name="Full name" placeholder="" required>
+    <label>Full name</label>
   </div>
+  <div class="email-form">
+    <input  type="text" name="E-mail" placeholder="" required>
+    <label>E-mail</label>
+  </div>
+  <div class="message">
+    <textarea  name= "message" placeholder=""></textarea>
+    <label>Write a message</label>
+  </div>
+  <input type="submit" name="submit" class="submit-btn">
+</div>
+</form> -->
+
+<form>
+	<div class="form-group">
+		<input type="text" required/><label>Full Name</label>
+	</div>
+	<div class="form-group">
+		<input type="text" required/><label>E-mail</label>
+	</div>
+	<input type="button" value="Submit" />
+</form>
+
 </section>
 
   <footer>
