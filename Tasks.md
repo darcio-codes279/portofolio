@@ -18,10 +18,13 @@
 [] Add links to social media buttons
 [] Add link to home button
 [✅] Create text carousel
+[✅] navbar that disappears on scroll
 
 ## About me
 
 [] Refactor JS code
+
+Create a timeline of experience
 
 ## Portfolio
 
@@ -31,6 +34,11 @@
 - Or add buttons
 
 [✅] Remove the navigation bar - commented out
+[] Add a button with a link
+
+## _New_ My advantages (or Services)
+
+[] Create section with specialisations and how good you are!
 
 ## Form
 

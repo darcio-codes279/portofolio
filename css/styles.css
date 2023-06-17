@@ -36,7 +36,7 @@ height: 50px;
   width: auto;
   object-fit: cover;
   display: block;
-  margin-left: 2px;
+  margin-left: 0px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -86,7 +86,7 @@ h4{
   font-size: 16px;
 }
 p {
-  font-size: 24px;
+  font-size: 12px;
 }
 
 footer{
@@ -170,7 +170,34 @@ button {
     left: 0;
     height: 861px;
     width: 100%;
-    background-color: #946141;
+    /* background-color:hsla(24,38%,50%,1);
+    background-image:
+    radial-gradient(at 18% 43%, hsla(23,47%,56%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 1%, hsla(15,62%,12%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(15,62%,12%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 76%, hsla(24,38%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 77% 34%, hsla(23,48%,56%,1) 0px, transparent 50%),
+    radial-gradient(at 94% 42%, hsla(22,40%,36%,1) 0px, transparent 50%),
+    radial-gradient(at 51% 100%, hsla(20,43%,29%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(18,47%,22%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 49%, hsla(21,42%,31%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(17,51%,18%,1) 0px, transparent 50%); */
+    /* background-color:hsla(24,38%,50%,1);
+    background-image:
+    radial-gradient(at 16% 55%, hsla(24,37%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(17,49%,18%,1) 0px, transparent 50%),
+    radial-gradient(at 7% 0%, hsla(17,49%,18%,1) 0px, transparent 50%),
+    radial-gradient(at 4% 89%, hsla(17,49%,18%,1) 0px, transparent 50%),
+    radial-gradient(at 67% 52%, hsla(20,49%,29%,1) 0px, transparent 50%); */
+    /* background-color:hsla(24,38%,50%,1);
+    background-image:
+    radial-gradient(at 6% 100%, hsla(17,49%,18%,1) 0px, transparent 50%),
+    radial-gradient(at 4% 1%, hsla(17,49%,18%,1) 0px, transparent 50%); */
+
+    background: rgb(84,47,30);
+    background: linear-gradient(180deg, rgba(84,47,30,1) 0%, rgba(122,76,51,1) 19%, rgba(132,85,56,1) 29%, rgba(130,83,55,1) 38%, rgba(124,78,52,1) 48%, rgba(132,85,56,1) 59%, rgba(122,76,51,1) 74%, rgba(119,74,50,1) 86%, rgba(84,47,30,1) 100%);
+    
+
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -300,16 +327,13 @@ button {
 
   /* About me section */
   .about-me{
-    margin-top: 200px;
+
+    margin-top: 70px;
     margin-bottom: 200px;
+    text-align: center;
   }
 
-.container{
-  display: block;
-  position: relative;
-  width: 85%;
-  margin: 30px;
-}
+
 
 #about-me-component {
   display: inline-block;
@@ -327,37 +351,29 @@ font-size: 24px;
 }
 
 
+
 /* Portfolio */
 
 .portfolio{
   position: relative;
-  height: 300px;
+  height: 1000px;
+  width: 100%;
   border-radius: 30px;
-  background-color: #422e20;
+  background-color: #542f1e;
 }
 
+.portfolio-title{
+  position: absolute;
+  top: 80px;
+}
 /* Form */
 
 .feel-free{
   margin-bottom: 0%;
 }
 
-
-@media screen and (min-width: 900px) {
-    .name-form, .email-form {width: 40%;}
-    form{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .message{
-      width: 100% !important;
-    }
-  }
-/* input[type=submit] {
-  float: right;
-} */
+/* 
+@media screen and (min-width: 900px) {}
 
 /* Style inputs, select elements and textareas  */
 input[type=text], textarea {
@@ -421,14 +437,6 @@ label {
   box-shadow: #422e20 0px 4px 10px;
   display: flex;
   justify-content: center;
-}
-
-.form-section1 { 
-  width: 100%;
-  @media screen and (min-width: 900px) {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 /* @media screen and (max-width: 600px) {
